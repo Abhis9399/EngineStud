@@ -128,7 +128,7 @@ const Checkout = ({ cart, subTotal, removefromCart, addtoCart }) => {
           // After successfully updating configuration, invoke JS Checkout
           window.Paytm.CheckoutJS.invoke();
         }).catch(function onError(error) {
-          console.log("error => ", error);
+          console.log("error => ", error)
         });
       } else {
         console.error("Failed to fetch transaction token");
